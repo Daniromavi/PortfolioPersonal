@@ -83,7 +83,7 @@ export default function Home() {
             {showTyping && (
               <TypingText
                 texts={[
-                  "Desarrollador Full-Stack · Java · Angular · Next.js",
+                  "Buenos dias Linkedin!",
                   "Estudiando ciberseguridad y pentesting...",
                   "Apasionado por el hardware y los componentes.",
                   "Buscando oportunidades para crecer profesionalmente.",
@@ -184,16 +184,14 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-5 text-purple-300">Sobre mí</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               👋 Soy un desarrollador full-stack con enfoque backend, apasionado por crear soluciones limpias y funcionales.<br /><br />
-              💻 Me especializo en Java y Desarrollo Android, pero también disfruto construir interfaces modernas con Next.js y TypeScript.<br /><br />
+              💻 Me especializo en Java, Angular y Desarrollo Android, pero también disfruto construir interfaces modernas con Next.js y TypeScript.<br /><br />
+              🤖 Integro herramientas de inteligencia artificial en mi flujo de trabajo diario para optimizar procesos, generar ideas y mejorar la productividad.<br /><br />
               🛠️ He desarrollado herramientas como <strong>TankNet</strong>, una app de auditoría de red multiplataforma, además de trabajar con automatizaciones y APIs REST.<br /><br />
               🚀 Busco oportunidades donde crecer profesionalmente, rodeado de personas que compartan la ambición de hacer las cosas bien.
             </p>
           </motion.div>
-
         </div>
       </section>
-
-
 
       {/* PROYECTOS */}
       <section
@@ -286,7 +284,7 @@ export default function Home() {
                 Tecnologías Web
               </h3>
               <ul className="space-y-3">
-                {["HTML", "CSS (Tailwind)", "Next.js", "React"].map((item) => (
+                {["Angular", "CSS (Tailwind)", "Next.js", "React"].map((item) => (
                   <li
                     key={item}
                     className="flex items-center gap-2 group transition duration-200 hover:scale-[1.02]"
