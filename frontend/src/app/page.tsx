@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import TypingText from '@/components/TypingText';
 import Navbar from '@/components/Navbar';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 
 import { useState, useEffect } from 'react';
 import { FaBriefcase, FaGraduationCap, FaLaptopCode } from 'react-icons/fa';
@@ -21,6 +22,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Analytics />
+      <SpeedInsights />
 
       {/* HERO */}
       <section
