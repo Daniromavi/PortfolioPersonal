@@ -83,7 +83,7 @@ export default function Home() {
             {showTyping && (
               <TypingText
                 texts={[
-                  "Buenos dias Linkedin!",
+                  "Desarrollador Full-Stack · Java · Angular · Next.js",
                   "Estudiando ciberseguridad y pentesting...",
                   "Apasionado por el hardware y los componentes.",
                   "Buscando oportunidades para crecer profesionalmente.",
