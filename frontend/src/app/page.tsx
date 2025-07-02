@@ -6,6 +6,7 @@ import ProjectCard from '@/components/ProjectCard';
 import { motion } from 'framer-motion';
 import TypingText from '@/components/TypingText';
 import Navbar from '@/components/Navbar';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { useState, useEffect } from 'react';
 import { FaBriefcase, FaGraduationCap, FaLaptopCode } from 'react-icons/fa';
@@ -162,7 +163,7 @@ export default function Home() {
             className="relative w-[400px] h-[500px] rounded-xl overflow-hidden shadow-lg border-2 border-purple-500"
           >
             <Image
-              src="/dhannyportfolio.png"
+              src="/DhannyPortfolio.png"
               alt="Daniel Romero"
               fill
               className="object-cover object-top"
