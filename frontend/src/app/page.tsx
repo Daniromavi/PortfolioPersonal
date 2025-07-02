@@ -184,7 +184,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-5 text-purple-300">Sobre mí</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
               👋 Soy un desarrollador full-stack con enfoque backend, apasionado por crear soluciones limpias y funcionales.<br /><br />
-              💻 Me especializo en Java y Spring Boot, pero también disfruto construir interfaces modernas con Next.js y TypeScript.<br /><br />
+              💻 Me especializo en Java y Desarrollo Android, pero también disfruto construir interfaces modernas con Next.js y TypeScript.<br /><br />
               🛠️ He desarrollado herramientas como <strong>TankNet</strong>, una app de auditoría de red multiplataforma, además de trabajar con automatizaciones y APIs REST.<br /><br />
               🚀 Busco oportunidades donde crecer profesionalmente, rodeado de personas que compartan la ambición de hacer las cosas bien.
             </p>
