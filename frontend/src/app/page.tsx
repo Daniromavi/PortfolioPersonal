@@ -126,14 +126,14 @@ export default function Home() {
             className="mt-6 flex gap-4 flex-wrap justify-center"
           >
             <a
-              href="#sobremi"
+              href="#contacto"
               className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-md shadow transition duration-300 transform hover:scale-110 hover:shadow-[0_0_20px_rgba(236,72,255,0.6)] hover:drop-shadow-[0_0_10px_rgba(236,72,255,0.6)]"
             >
               Contactame
             </a>
 
             <a
-              href="/cv.pdf"
+              href="/cv-daniel-romero-avila.pdf"
               download
               className="px-6 py-2 border border-white text-white rounded-md transition duration-300 transform hover:scale-110 hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]"
             >
@@ -219,7 +219,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5, delay: i * 0.1, type: "spring", stiffness: 300 }}
+                transition={{ duration: 0.5, delay: 0, type: "spring", stiffness: 300 }}
                 viewport={{ once: false }}
                 className="h-full"
               >
@@ -259,7 +259,7 @@ export default function Home() {
                 Lenguajes
               </h3>
               <ul className="space-y-3">
-                {["Java", "Python (Básico)", "C (Básico)", "C++ (Básico)"].map((item) => (
+                {["Java", "Java (Android)", "Python (Básico)", "C++ (Básico)"].map((item) => (
                   <li
                     key={item}
                     className="flex items-center gap-2 group transition duration-200 hover:scale-[1.02]"
@@ -361,7 +361,7 @@ export default function Home() {
                   icon: <FaLaptopCode className="text-4xl" />,
                   title: 'CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)',
                   subtitle: 'Grupo Studium · 2023 – 2025',
-                  desc: 'Programación Java, Android, bases de datos, devops y prácticas integradas.',
+                  desc: 'Programación Java, Android, bases de datos, Python y prácticas integradas.',
                 },
                 {
                   icon: <FaBriefcase />,
@@ -480,7 +480,7 @@ export default function Home() {
             </motion.button>
 
             {/* opcional: evita redirecciones de formsubmit */}
-            <input type="hidden" name="_next" value="http://localhost:3000/#contacto" />
+            <input type="hidden" name="_next" value="https://daniromavi.vercel.app/#contacto" />
             <input type="hidden" name="_captcha" value="Nuevo mensaje desde tu portfolio" />
           </form>
         </div>

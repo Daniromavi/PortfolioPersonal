@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaNetworkWired, FaRobot, FaLaptopCode } from 'react-icons/fa';
+import { FaGithub, FaNetworkWired, FaRobot, FaLaptopCode, FaFilm, FaMapMarkerAlt } from 'react-icons/fa';
 
 interface Project {
     title: string;
     description: string;
     tags: string[];
     github?: string;
-    iconName?: 'network' | 'robot' | 'laptop';
+    iconName?: 'network' | 'robot' | 'laptop' | 'movie' | 'location';
 }
 
 const getIcon = (name?: string) => {
@@ -18,6 +18,10 @@ const getIcon = (name?: string) => {
             return <FaRobot />;
         case 'laptop':
             return <FaLaptopCode />;
+        case 'movie':
+            return <FaFilm />;
+        case 'location':
+            return <FaMapMarkerAlt />;
         default:
             return '📁';
     }
