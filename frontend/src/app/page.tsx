@@ -183,11 +183,11 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-5 text-purple-300">Sobre mí</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              👋 Soy un desarrollador full-stack con enfoque backend, apasionado por crear soluciones limpias y funcionales.<br /><br />
-              💻 Me especializo en Java, Angular y Desarrollo Android, pero también disfruto construir interfaces modernas con Next.js y TypeScript.<br /><br />
-              🤖 Integro herramientas de inteligencia artificial en mi flujo de trabajo diario para optimizar procesos, generar ideas y mejorar la productividad.<br /><br />
-              🛠️ He desarrollado herramientas como <strong>TankNet</strong>, una app de auditoría de red multiplataforma, además de trabajar con automatizaciones y APIs REST.<br /><br />
-              🚀 Busco oportunidades donde crecer profesionalmente, rodeado de personas que compartan la ambición de hacer las cosas bien.
+              👋 Soy un desarrollador <strong>full-stack</strong> con enfoque <strong>backend</strong>, apasionado por crear soluciones limpias y funcionales.<br /><br />
+              💻 Me especializo en <strong>Java, Angular y Desarrollo Android</strong>, pero también disfruto construir interfaces modernas con <strong>Next.js y TypeScript</strong>.<br /><br />
+              🤖 Integro herramientas de <strong>inteligencia artificial</strong> en mi flujo de trabajo diario para optimizar procesos, generar ideas y mejorar la productividad.<br /><br />
+              🛠️ He desarrollado herramientas como <strong>TankNet</strong>, una app de auditoría de red multiplataforma, además de trabajar con automatizaciones y <strong>APIs REST</strong>.<br /><br />
+              🚀 <strong>Busco oportunidades</strong> donde crecer profesionalmente, rodeado de personas que compartan la ambición de hacer las cosas bien.
             </p>
           </motion.div>
         </div>
