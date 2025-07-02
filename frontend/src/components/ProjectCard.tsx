@@ -26,7 +26,7 @@ const getIcon = (name?: string) => {
 const ProjectCard: FC<{ project: Project }> = ({ project }) => {
     return (
         <motion.div
-            className="bg-[#140c1c] p-6 rounded-2xl shadow-md text-white flex flex-col gap-4 hover:shadow-purple-900 transition-all"
+            className="h-full flex flex-col bg-[#140c1c] p-6 rounded-2xl shadow-md text-white gap-4 hover:shadow-purple-900 transition-all"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -38,7 +38,10 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
 
             <div className="flex flex-wrap gap-2 mt-2">
                 {project.tags.map((tag) => (
-                    <span key={tag} className="bg-[#1f112a] text-xs px-3 py-1 rounded-full text-purple-200">
+                    <span
+                        key={tag}
+                        className="bg-[#1f112a] text-xs px-3 py-1 rounded-full text-purple-200"
+                    >
                         {tag}
                     </span>
                 ))}
@@ -53,6 +56,7 @@ const ProjectCard: FC<{ project: Project }> = ({ project }) => {
                 View on GitHub
             </a>
         </motion.div>
+
     );
 };
 
