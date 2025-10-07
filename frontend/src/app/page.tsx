@@ -440,7 +440,7 @@ export default function Home() {
                 title: "Certificado de Personalizacion en Linux",
                 issuer: "Hack4u · 2025",
                 img: "/certificates/personalizacion-linux.png",
-                link: "/certificates/Certificado_Personalizacion_de_Linux.pdf",
+                link: "/certificates/Certificado_Personalizacion_De_Linux.pdf",
               },
               {
                 title: "Certificado Introducción a Linux",
