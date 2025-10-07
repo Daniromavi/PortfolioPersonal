@@ -183,11 +183,11 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-5 text-purple-300">Sobre mí</h2>
             <p className="text-gray-300 text-lg leading-relaxed">
-              👋 Soy un desarrollador <strong>full-stack</strong> con enfoque <strong>backend</strong>, apasionado por crear soluciones limpias y funcionales.<br /><br />
-              💻 Me especializo en <strong>Java, Angular y Desarrollo Android</strong>, pero también disfruto construir interfaces modernas con <strong>Next.js y TypeScript</strong>.<br /><br />
-              🤖 Integro herramientas de <strong>inteligencia artificial</strong> en mi flujo de trabajo diario para optimizar procesos, generar ideas y mejorar la productividad.<br /><br />
-              🛠️ He desarrollado herramientas como <strong>TankNet</strong>, una app de auditoría de red multiplataforma, además de trabajar con automatizaciones y <strong>APIs REST</strong>.<br /><br />
-              🚀 <strong>Busco oportunidades</strong> donde crecer profesionalmente, rodeado de personas que compartan la ambición de hacer las cosas bien.
+              👋 Soy un desarrollador con formación en <strong>DAM</strong>, apasionado por crear software eficiente y bien estructurado.<br /><br />
+              💻 Trabajo principalmente con <strong>Java, Angular y desarrollo Android</strong>, y también manejo <strong>React, Next.js, TailwindCSS y SQL</strong> para interfaces modernas y bases de datos.<br /><br />
+              🐍 Tengo conocimientos en <strong>Python y C++</strong> para scripts, automatizaciones y programación de bajo nivel, y me siento cómodo en <strong>Linux</strong>.<br /><br />
+              🔒 Me estoy introduciendo en <strong>ciberseguridad y pentesting</strong> para complementar mis habilidades de programación.<br /><br />
+              🚀 Soy autodidacta y constante, con buen nivel de inglés, buscando mi primera oportunidad como <strong>desarrollador junior</strong> para seguir creciendo profesionalmente.
             </p>
           </motion.div>
         </div>
@@ -414,8 +414,81 @@ export default function Home() {
       </section>
 
       <section
+        id="certificaciones"
+        className="py-20 px-6 bg-[#2e1b47] text-white"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-16 text-purple-300 drop-shadow-[0_0_10px_rgba(192,132,252,0.8)]">
+            Certificaciones
+          </h2>
+
+          <motion.div
+            className="grid gap-8 justify-center"
+            style={{ gridTemplateColumns: "repeat(auto-fit, 300px)" }}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.3 }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: { staggerChildren: 0.12 },
+              },
+            }}
+          >
+            {[
+              {
+                title: "Certificado de Personalizacion en Linux",
+                issuer: "Hack4u · 2025",
+                img: "/certificates/personalizacion-linux.png",
+                link: "/certificates/Certificado_Personalizacion_de_Linux.pdf",
+              },
+              {
+                title: "Certificado Introducción a Linux",
+                issuer: "Hack4u · 2025",
+                img: "/certificates/linux.png",
+                link: "/certificates/Certificado_Introduccion_a_Linux.pdf",
+              },
+            ].map((cert, i) => (
+              <motion.a
+                key={i}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#2e1b47] rounded-xl shadow-lg overflow-hidden cursor-pointer w-full"
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.5, type: "spring", stiffness: 200, damping: 20 }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 0 15px rgba(192,132,252,0.3)",
+                  y: -3
+                }}
+              >
+                <div className="w-full h-40 relative">
+                  <Image
+                    src={cert.img}
+                    alt={cert.title}
+                    fill
+                    className="object-cover w-full h-full rounded-t-xl"
+                  />
+                </div>
+
+                <div className="p-4 text-center">
+                  <h3 className="font-bold text-purple-300 text-lg">{cert.title}</h3>
+                  <p className="text-sm text-purple-200">{cert.issuer}</p>
+                </div>
+              </motion.a>
+
+
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      <section
         id="contacto"
-        className="bg-[#2e1b47] text-white py-24 px-6"
+        className="bg-[#1a0e2a] text-white py-24 px-6"
       >
         <div className="max-w-xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-purple-300 drop-shadow-[0_0_10px_rgba(192,132,252,0.8)]">

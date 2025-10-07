@@ -48,7 +48,7 @@ export const projects: Project[] = [
         description: "Script en Python para escanear la red local, identificar dispositivos conectados y mostrar sus direcciones IP y MAC mediante ARP.",
         technologies: ["Python", "ARP", "Sockets"],
         tags: ["Python", "Networking", "ARP", "Automation"],
-        github: "https://github.com/Daniromavi/MAC-Scanner",
+        github: "https://github.com/Daniromavi/TankNet",
         iconName: 'network',
     },
     {
